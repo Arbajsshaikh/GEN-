@@ -16,8 +16,8 @@ def top_100_values_sorted(dataframe, column_name):
     return pd.DataFrame(top_100_values, columns=[column_name])
 
 # Read data from Excel file
-excel_file_path = 'D:\data\PURCHASE DEPT\GENERIC_AVG_DIST_DISTRIBUTION.xlsx'  # Update with your actual file path
-df = pd.read_excel(excel_file_path,index_col='Medicine Name')
+excel_file_path = r"C:\Users\gmpl2\GEN-\GENERIC_AVG_DIST_DISTRIBUTION.xlsx"  # Use raw string literal
+df = pd.read_excel(excel_file_path, index_col='Medicine Name')
 
 # Streamlit App
 st.title('Top 100 Values Selector')
@@ -35,7 +35,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 
 # Read data from Excel file
-your_dataframe = pd.read_excel(r"D:\data\PURCHASE DEPT\ashish sir\\PLOTTING_DATA_AVG_DIST_DISTRIBUTION.xlsx", index_col='Medicine Name')
+your_dataframe = pd.read_excel(r"C:\Users\gmpl2\GEN-\PLOTTING_DATA_AVG_DIST_DISTRIBUTION.xlsx", index_col='Medicine Name')  # Use raw string literal
 df = your_dataframe.copy()
 
 # Function for creating the bar plot
